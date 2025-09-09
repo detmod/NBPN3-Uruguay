@@ -21,22 +21,20 @@ body {
 
 /* Style the header */
 .header {
-  margin: auto;
-  height: 420px;
-  width: 670px;
+  padding: 30px;
+  text-align: center;
+  font-size: 32px;
 }
 
-.header img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
+
 
 /* Create three unequal columns that floats next to each other */
 .column {
   float: left;
-  padding: 0px;
+  padding: 10px;
+  
 }
+
 
 /* Left and right column */
 .column.left {
@@ -63,8 +61,6 @@ body {
 .footer {
   padding: 10px;
   text-align: center;
-}
-  
 }
 
 /* Potential program schedule formatting
@@ -107,19 +103,6 @@ tr.invited {
 }
 
 
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px){
@@ -145,8 +128,6 @@ tr.invited {
     width:100%;
     position:absolute;
 }
-
-
 
 
 
