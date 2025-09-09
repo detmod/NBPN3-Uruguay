@@ -116,11 +116,12 @@ tr.invited {
   .column.left, .column.right, .column.middle{
     width: 100%;
   }
-  #logo {
-        max-height: 200px;
-        width: 100%;
-    }
+  
 }
+.header {
+        max-height: 200px;
+        width: 80%;
+    }
 
 .map-responsive{
     overflow:hidden;
