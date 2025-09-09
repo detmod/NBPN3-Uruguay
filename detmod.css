@@ -68,7 +68,6 @@ body {
 .footer {
   padding: 10px;
   text-align: center;
-  align-items: center;
 }
 
 /* Potential program schedule formatting
@@ -124,7 +123,7 @@ tr.invited {
   .footer {
         max-height: 150px;
         width: 80%;
-        align-items: center;
+        text-align: center;
     }
 }
 
