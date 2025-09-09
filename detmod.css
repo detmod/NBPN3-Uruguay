@@ -20,10 +20,17 @@ body {
 
 
 /* Style the header */
+
 .header {
-  padding: 30px;
-  text-align: center;
-  font-size: 32px;
+  margin: auto;
+  height: 450px;
+  width: 700px;
+}
+
+.header img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 
