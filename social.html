@@ -36,18 +36,107 @@
     <h3>Local flea market Tristán Narvaja</h3>
     <p>At around 11 am, we will meet in the main street of this market, Tristan Narvaja, to get a first view of Montevidean culture. We will  have lunch at a traditional restaurant, situated on the same street: <a href="https://www.instagram.com/elimperio_bar?igsh=MTB3bDQ0OGUyYzgycg%3D%3D">https://www.instagram.com/elimperio_bar?igsh=MTB3bDQ0OGUyYzgycg%3D%3D</a></p>
 
-    <img width="200" height="260" src="araminda1.jpeg" id="araminda1" alt="montevideo1" />
-    <img width="330" height="260" src="araminda2.jpeg" id="araminda2" alt="montevideo1" />
-   
-
     <h2>WEDNESDAY 25th March</h2>
     <h3>A day at the beach, Araminda</h3>
     <p>After two intense days of work, we will taste a Uruguayan asado, by the beach. <br>
     A colleague of ours has kindly lent us her beach house (60 km far from Montevideo), to spend the day in nature and have a typical asado.  An asado consists of different kinds of roast meat (and roast vegetables for those who are vegetarians).</p>
-    
-    <img width="330" height="260" src="montevideo3.jpeg" id="montevideo3" alt="montevideo1"/>
-    <img width="330" height="260" src="montevideo2.jpeg" id="montevideo2" alt="montevideo1"/>
    
+    <div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="tristan1.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="tristan2.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="araminda1.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="araminda2.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="araminda3.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="montevideo1.jpeg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="rowslide">
+    <div class="columnslide ">
+      <img class="demo cursor" src="tristan1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Tristan Narvaja Flea Market">
+    </div>
+    <div class="columnslide">
+      <img class="demo cursor" src="tristan2.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Tristan Narvaja Flea Market">
+    </div>
+    <div class="columnslide">
+      <img class="demo cursor" src="araminda1.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Araminda beach">
+    </div>
+    <div class="columnslide">
+      <img class="demo cursor" src="araminda2.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Araminda beach">
+    </div>
+    <div class="columnslide">
+      <img class="demo cursor" src="araminda3.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Araminda beach">
+    </div>
+    <div class="columnslide">
+      <img class="demo cursor" src="montevideo1.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Montevideo">
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
 
   </div>
 </div>
